@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselItem from './CarouselItem'
+import CarouselItem from "./CarouselItem";
 
 const items = [
   {
@@ -23,18 +23,17 @@ const items = [
   },
 ];
 
-
 function UncontrolledCarousel() {
   return (
-    <Carousel>
+    <Carousel >
       {items.map((item) => (
-          <CarouselItem
-            src={item.src}
-            altText={item.altText}
-            caption={item.caption}
-            key={item.src}
-          />
-        ))}
+        <CarouselItem
+          src={item.src}
+          altText={item.altText}
+          caption={item.caption}
+          key={item.src}
+        />
+      ))}
     </Carousel>
   );
 }

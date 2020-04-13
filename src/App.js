@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import ProgBar from "./progressBar/ProgBar";
-import UncontrolledCarousel from "./carousel/UncontolledCarousel";
+import ControlledCarousel from "./carousel/ControlledCarousel";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <ProgBar />
-        <UncontrolledCarousel />
       </header>
+      <ControlledCarousel />
     </div>
   );
 }
